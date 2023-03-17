@@ -1,24 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *Description: 
- *
+ * main - A program that prints the number of arguements you passed into it
+ * @argc: An argument count
+ * @argv: An argument vector
+ * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
 	int count;
 
-	printf("\"%s\"\n", argv[0]);
-	if (argc > 1)
+	if (argc > 0)
 	{
-		for (count = 1; count < argc; count++)
+		count = 0;
+		while (count < argc)
 		{
-			printf("%d\n", count);
+		printf("%d\n", count);
+		count++;
 		}
-	}
+	}	
 	else 
 	{
-		printf("Non");
+		printf("Not applicable");
 	}
 	return (0);
 }
