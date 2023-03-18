@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-        int count;
+	int count;
 
 	printf("%s\n", argv[0]);
 
