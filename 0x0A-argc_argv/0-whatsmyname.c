@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * Description: Aprogram that prints its name, followed by \n
- *
+ *main - Aprogram that prints its name, followed b anew line.
+ *@argc:argumentcount(unused parameter)
+ *@argv:argument vector
  * Return: 0
  */
 int main(int __attribute__((unused)) argc, char **argv)
 {
-	printf("The program name is: \"%s\".\n", argv[0]);
-		return 0;
+	printf("%s\n", argv[0]);
+		return (0);
 }
 	
