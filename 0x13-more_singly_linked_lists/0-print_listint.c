@@ -11,14 +11,10 @@
 {
 	size_t nodes = 0;
 
-	for (; h; h = h->next)
+	while (h)
 	{
-		int n = h->n;
-		while (n > 0) {
-			putchar('0' + n % 10);
-			n /= 10;
-		}
-		putchar('\n');
+		printf("%d\n", h->n);
+		h = h->next;
 		nodes++;
 	}
 	return (nodes);
