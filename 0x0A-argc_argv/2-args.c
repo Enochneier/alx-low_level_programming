@@ -8,21 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int count;
-
-	printf("%s\n", argv[0]);
-
-        if (argc > 0)
-        {
-		for (count = 1; count < argc; count++)
-		{
-			 printf("%s\n", argv[count]);
-                }
-        }
-        else
-        {
-                printf("Not applicable\n");
-        }
-        return (0);
+	{
+	while (argc--)
+	{
+		printf("%s\n", *argv++);
+	}
+	return (0);
+	}
 }
-
