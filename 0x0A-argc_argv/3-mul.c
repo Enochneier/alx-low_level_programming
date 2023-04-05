@@ -12,10 +12,10 @@ int main(int argc, char **argv)
 	int b;
 	int result;
 
-	if ( argc !=3 )
+	if (argc != 3)
 	{
 		printf("Error\n");
-                return (1);
+		return (1);
 	}
 	else
 	{
@@ -24,8 +24,6 @@ int main(int argc, char **argv)
 		result = a * b;
 
 		printf("%d\n", result);
-                return (0);
+		return (0);
 	}
-}
-
-			
+}	
