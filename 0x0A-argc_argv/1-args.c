@@ -8,20 +8,13 @@
  */
 int main(int argc, char __attribute__((unused)) *argv[])
 {
-	int count;
+	int i = 0, m;
 
-	if (argc > 0)
+	while (i <argc)
 	{
-		count = 0;
-		while (count < argc)
-		{
-			printf("%d\n", count);
-			count++;
-		}
-	}	
-	else 
-	{
-		printf("Not applicable");
+		m = i;
+		i++;
 	}
+	printf("%d\n", m);
 	return (0);
 }
